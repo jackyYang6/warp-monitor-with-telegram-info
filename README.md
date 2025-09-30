@@ -20,7 +20,7 @@
 ## 🚀 1. 克隆本仓库
 
 ```bash
-wget -O /root/warp_monitor.sh https://raw.githubusercontent.com/jackyYang6/warp-monitor-with-telegram-info/blob/main/warp-monitor.sh \
+wget -O /root/warp_monitor.sh https://raw.githubusercontent.com/jackyYang6/warp-monitor-with-telegram-info/main/warp-monitor.sh \
 && chmod +x /root/warp_monitor.sh && bash /root/warp_monitor.sh
 ```
 
