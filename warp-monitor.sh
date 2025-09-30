@@ -80,7 +80,7 @@ EOF
 # 配置 crontab（默认每小时）
 setup_cron_job() {
     local cron_comment="# WARP_MONITOR_CRON"
-    local cron_job="0 * * * * timeout 20m ${SCRIPT_PATH} ${cron_comment}"
+    local cron_job="*/20 * * * * timeout 10m ${SCRIPT_PATH} ${cron_comment}"
 
     if ! crontab -l 2>/dev/null | grep -qF "$cron_comment"; then
         (crontab -l 2>/dev/null; echo "$cron_job") | crontab -
